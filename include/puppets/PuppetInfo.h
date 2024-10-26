@@ -65,4 +65,11 @@ struct PuppetInfo {
     bool     isFreezeTagFreeze    = false;
     bool     isFreezeTagFallenOff = false; // When runner falls off and is automatically frozen, this flag is set
     float    freezeIconSize       = 0.f;
+
+        // Coin Runner Gamemode Info
+    uint16_t coinRunnerScore       = 0;
+    bool     isCoinRunnerRunner    = true;
+    bool     isCoinRunnerFreeze    = false;
+    bool     isCoinRunnerFallenOff = false; // When runner falls off and is automatically frozen, this flag is set
+    float    coinIconSize       = 0.f;
 };

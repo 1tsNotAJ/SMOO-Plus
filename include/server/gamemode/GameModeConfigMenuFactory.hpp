@@ -4,6 +4,7 @@
 #include "server/hns/HideAndSeekConfigMenu.hpp"
 #include "server/sardines/SardineConfigMenu.hpp"
 #include "server/freeze-tag/FreezeTagConfigMenu.hpp"
+#include "server/coinrunner/CoinRunnerConfigMenu.hpp"
 #include "server/inf/InfectionConfigMenu.hpp"
 #include "server/gamemode/GameModeConfigMenu.hpp"
 
@@ -19,6 +20,7 @@ __attribute((used)) constexpr al::NameToCreator<createMenu> menuTable[] = {
     { "Sardine",     &createGameModeConfigMenu<SardineConfigMenu>     },
     { "FreezeTag",   &createGameModeConfigMenu<FreezeTagConfigMenu>   },
     { "Infection",   &createGameModeConfigMenu<InfectionConfigMenu>   },
+    { "Coin Runner (Broken)", &createGameModeConfigMenu<CoinRunnerConfigMenu>  },
 };
 
 class GameModeConfigMenuFactory : public al::Factory<createMenu> {
